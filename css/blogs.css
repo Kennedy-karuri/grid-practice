@@ -1,0 +1,169 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    height: 980px;
+    display: grid;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    background-size: 98vh;
+
+}
+
+.content {
+    padding: 80px;
+
+
+
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav ul li {
+    list-style: none;
+    color: aquared;
+    text-decoration: none;
+
+
+
+}
+
+.nav ul li a {
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+
+.nav li {
+    display: inline-flex;
+    justify-content: end;
+    word-spacing: 1cm;
+
+
+
+
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-areas:
+    "one one two "
+    "three four two "
+    "five six seven"
+;
+}
+
+.one{
+
+    padding: 10px;
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.two{
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.two h1{
+
+    color: yellow;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.two p{
+font-size: large;
+
+}
+
+.three{
+
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.three h2{
+
+    font-size: xx-large;
+    font-weight: bolder;
+    size: 4cm;
+}
+.four{
+    padding: 10px;
+    grid-area: four;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.four button{
+    background-color: red;
+    size: 5cm;
+    color: white;
+    border: none;
+    height: 30px;
+    width: inherit;
+}
+
+.five{
+    grid-area:five;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+    height: 40%;
+    gap: 20px;
+
+    
+}
+
+.footer1{
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around;
+
+}
+
+.six{
+    grid-area:six;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+    height: 40%;
+    gap: 20px;
+}
+
+.seven{
+
+    grid-area:seven;
+    padding: 10px;
+    display: flex;
+    flex-direction:row;
+    height: 40%;
+    gap: 20px;
+}
