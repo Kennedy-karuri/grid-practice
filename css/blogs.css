@@ -1,6 +1,7 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -39,6 +40,11 @@
 .nav ul li a {
     list-style: none;
     text-decoration: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Inter", Arial, san-serif;
+    float: right;
+    color: grey;
 
 
 }
@@ -57,13 +63,14 @@
 .gridcontainer {
     display: grid;
     grid-template-areas:
-    "one one two "
-    "three four two "
-    "five six seven"
-;
+        "one one two "
+        "three four two "
+        "five six seven"
+    ;
+    gap: 40px;
 }
 
-.one{
+.one {
 
     padding: 10px;
     grid-area: one;
@@ -72,49 +79,60 @@
     justify-content: space-evenly;
 }
 
-.two{
-
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
+.two {
+    border-style: solid;
     grid-area: two;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background: rgb(0, 0, 26);
+    color: white;
+    padding: 20px;
 }
 
-.two h1{
+.two h1 {
 
-    color: yellow;
+    color: rgb(234, 167, 76);
     font-size: larger;
     font-weight: bolder;
+    padding-top: 30px;
 }
 
-.two p{
-font-size: large;
+.two p {
+    padding: 10px 0px;
+    font-size: 15px;
+    color: rgb(255, 255, 255, 0.7);
+    font-family: monospace;
 
 }
 
-.three{
+.info h3 {
+    font-family: "Inter", Arial, san-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.three {
 
     background-color: aliceblue;
     color: black;
     padding: 10px;
-    border-radius: 10px;
     grid-area: three;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 80px;
+    width: 180px;
 }
 
-.three h2{
+.three h2 {
 
     font-size: xx-large;
     font-weight: bolder;
     size: 4cm;
 }
-.four{
+
+.four {
     padding: 10px;
     grid-area: four;
     display: flex;
@@ -122,48 +140,74 @@ font-size: large;
     justify-content: space-around;
 }
 
-.four button{
-    background-color: red;
-    size: 5cm;
+.four button {
+    margin-top: 20px;
+    width: 50%;
+    height: 6vh;
+    font-weight: bold;
     color: white;
     border: none;
-    height: 30px;
-    width: inherit;
+    text-transform: uppercase;
+    background: rgb(239, 92, 80);
 }
 
-.five{
-    grid-area:five;
+.five {
+    grid-area: five;
     padding: 10px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     height: 40%;
     gap: 20px;
 
-    
-}
-
-.footer1{
-   display: flex;
-   flex-direction: column;
-   justify-content:space-around;
 
 }
 
-.six{
-    grid-area:six;
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    padding-left: 10px;
+
+}
+
+.footer1 p {
+    font-family: "Inter", Arial, san-serif;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color: gray;
+}
+
+,
+.footer1 h5 {
+
+    font-family: "InterBold", Arial, san-serif;
+    color: rgb(39, 39, 39, 0.2);
+    padding-bottom: 10px;
+}
+
+.footer1 h6 {
+
+    font-family: "InterBold", Arial, san-serif;
+    font-size: large;
+}
+
+.six {
+    grid-area: six;
     padding: 10px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     height: 40%;
     gap: 20px;
 }
 
-.seven{
+.seven {
 
-    grid-area:seven;
+    grid-area: seven;
     padding: 10px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     height: 40%;
     gap: 20px;
 }
